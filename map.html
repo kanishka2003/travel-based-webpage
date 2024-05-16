@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAP USER LOCATION</title>
+
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="crossorigin=""/>
+	 
+	 
+	 <!-- Make sure you put this AFTER Leaflet's CSS -->
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="crossorigin=""></script>
+     
+     <style>
+	 #map { height: 600px;
+            width: 1400px;	
+			}
+     
+	 </style>
+</head>
+<body>
+<h1>Map User Location</h1>
+ <div id="map"></div>
+</body>
+<script>
+var map = L.map('map');
+map.setView([28.15, 76.04], 3);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+L.marker([15.3345, 74.0979], {
+title: "Goa",
+})
+.addTo(map)
+L.marker([10.0862, 77.0604
+], {
+title: "Munnar",
+})
+.addTo(map)
+L.marker([34.080,77.300], {
+title: "Ladakhi",
+})
+.addTo(map)
+L.marker([31.006, 77.214], {
+title: "Shimla",
+})
+.addTo(map)
+L.marker([32.2314,77.1931], {
+title: "Manali",
+})
+.addTo(map)
+L.marker([11.7101, 76.13], {
+title: "Wayanad",
+})
+.addTo(map)
+L.marker([10.2176, 77.509], {
+title: "Kadaikanal",
+})
+.addTo(map)
+L.marker([27.6057, 88.446], {
+title: "Sikkim",
+})
+.addTo(map)
+L.marker([25.2759, 91.73], {
+title: "Cherrapunji",
+})
+.addTo(map)
+L.marker([60.0389, 11.352], {
+title: "Auli",
+})
+.addTo(map)
+L.marker([-32.6976, 151.9597], {
+title: "Gir national park",
+})
+.addTo(map)
+L.marker([11.6451, 92.7494], {
+title: "Corbyns cova beach",
+})
+.addTo(map)
+L.marker([9.91963, 78.11869], {
+title: "meenakshi amman temple",
+})
+.addTo(map)
+L.marker([27.5886, 91.8774], {
+title: "Tawang",
+})
+.addTo(map)
+L.marker([26.2648, 71.6034], {
+title: "Kashmir",
+})
+.addTo(map)
+L.marker([27.50003, 69.99997], {
+title: "Thar desert",
+})
+.addTo(map)
+L.marker([11.4077, 76.7121], {
+title: "Ooty",
+})
+.addTo(map)
+L.marker([12.93631, 77.61513], {
+title: "Coorg",
+})
+.addTo(map)
+L.marker([27.0438, 88.2506], {
+title: "Darjeeling",
+})
+.addTo(map)
+L.marker([30.7438, 79.6168], {
+title: "Valley of flowers",
+})
+.addTo(map)
+L.marker([27.56977, 93.8277], {
+title: "ziro valley",
+})
+.addTo(map)
+L.marker([31.6339, 74.8847], {
+title: "Amritsar",
+})
+.addTo(map)
+L.marker([30.83, 78.5499], {
+title: "Dayara bugyal",
+})
+.addTo(map)
+L.marker([27.10444,88.00048], {
+title: "Sandakphu",
+})
+.addTo(map)
+L.marker([18.3242, 82.8806], {
+title: "Araku valley",
+})
+.addTo(map)
+L.marker([49.8809, 24.9543], {
+title: "Bir",
+})
+.addTo(map)
+L.marker([17.9209, 73.6596], {
+title: "Mahabaleshwar",
+})
+.addTo(map)
+L.marker([18.7534, 73.4019], {
+title: "Lonavala",
+})
+.addTo(map)
+L.marker([25.54, 91.2832], {
+title: "Meghalayas",
+})
+.addTo(map)
+L.marker([1.29266, 103.86101], {
+title: "Promenade",
+})
+.addTo(map)
+L.marker([34.5049, 131.4694], {
+title: "Abu",
+})
+.addTo(map)
+L.marker([14.22928,74.81232], {
+title: "Jog falls",
+})
+.addTo(map)
+L.marker([15.6455, 74.4344], {
+title: "Amboli",
+})
+.addTo(map)
+L.marker([13.5094,75.0962], {
+title: "Agumbe",
+})
+.addTo(map)
+L.marker([13.3155, 75.77406], {
+title: "Chikmagalur",
+})
+.addTo(map)
+L.marker([52.0892,5.1252], {
+title: "Utrecht",
+})
+.addTo(map)
+L.marker([55.0289, 82.9228], {
+title: "Novosibirsk",
+})
+.addTo(map)
+L.marker([54.5963, -5.9301], {
+title: "Belfast",
+})
+.addTo(map)
+L.marker([49.838, -86.52], {
+title: "Ontario",
+})
+.addTo(map)
+L.marker([44.94665,-91.77154], {
+title: "Mount fuji",
+})
+.addTo(map)
+L.marker([-45.058, -70.523], {
+title: "Patagonia",
+})
+.addTo(map)
+L.marker([65.035,-18.123], {
+title: "Iceland",
+})
+.addTo(map)
+L.marker([47.0543,15.8411], {
+title: "Markt hartmannsdorf",
+})
+.addTo(map)
+L.marker([45.7649,10.2248], {
+title: "lef",
+})
+.addTo(map)
+navigator.geolocation.watchPosition(success, error);
+let marker, circle, zoomed;
+function success(pos) {
+   const lat = pos.coords.latitude;
+   const lng = pos.coords.longitude;
+   const accuracy = pos.coords.accuracy;
+   if (marker) {
+      map.removeLayer(marker);
+	  map.removeLayer(circle);
+   }
+   marker = L.marker([lat, lng]).addTo(map);
+   circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
+   if (!zoomed) {
+     zoomed = map.fitBounds(circle.getBounds());
+	
+   }
+   map.setView([lat, lng]);
+}
+
+
+
+</script>
+</html>
